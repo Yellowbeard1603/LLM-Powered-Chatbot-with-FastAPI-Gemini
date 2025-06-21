@@ -35,7 +35,6 @@ This project is a secure, JWT-authenticated chatbot powered by Google's Gemini L
 ├── auth.py              # JWT token creation and verification
 ├── static/
 │   └── index.html       # Frontend UI served at root
-├── test_main.py         # Basic unit tests for login
 ├── requirements.txt     # Python dependencies
 ├── Dockerfile           # Docker configuration
 ├── .env                 # Contains your Gemini API key (excluded from Git)
