@@ -29,3 +29,60 @@ This project is a secure, JWT-authenticated chatbot powered by Google's Gemini L
 
 ## 📁 Project Structure
 
+.
+├── main.py              # FastAPI app with endpoints
+├── auth.py              # JWT token creation and verification
+├── static/
+│   └── index.html       # Frontend UI served at root
+├── test_main.py         # Basic unit tests for login
+├── requirements.txt     # Python dependencies
+├── Dockerfile           # Docker configuration
+├── .env                 # Contains your Gemini API key (excluded from Git)
+├── .env.example         # Template for required environment variables
+└── README.md            # Project documentation
+
+
+---
+
+## ⚙️ How to Run Locally (Without Docker)
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/chatbot.git
+cd chatbot
+```
+
+### 2. Create and activate a virtual environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Create a .env file
+
+```bash
+GEMINI_API_KEY=your_google_genai_key
+```
+
+### 5. Run the app
+
+```bash
+uvicorn main:app --reload
+```
+
+### 6. Now open the browser and visit:
+
+```bash
+http://localhost:8000
+```
+
+
+
