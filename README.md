@@ -29,6 +29,7 @@ This project is a secure, JWT-authenticated chatbot powered by Google's Gemini L
 
 ## 📁 Project Structure
 
+```
 .
 ├── main.py              # FastAPI app with endpoints
 ├── auth.py              # JWT token creation and verification
@@ -43,6 +44,8 @@ This project is a secure, JWT-authenticated chatbot powered by Google's Gemini L
 
 
 ---
+
+```
 
 ## ⚙️ How to Run Locally (Without Docker)
 
@@ -83,6 +86,16 @@ uvicorn main:app --reload
 ```bash
 http://localhost:8000
 ```
+
+### 7. Login Credentials
+
+| Username | Password   |
+| -------- | ---------- |
+| `admin`  | `password` |
+
+
+
+
 
 
 
